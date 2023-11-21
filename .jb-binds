@@ -1,0 +1,9 @@
+export PATH="$PATH:/home/$USER/.local/share/JetBrains/Toolbox/scripts"
+function __code() {
+  setsid $1 "$2" &>/dev/null
+}
+
+alias codew="__code webstorm"
+alias codep="__code phpstorm"
+alias coder="__code rider"
+alias codecl="__code clion"
